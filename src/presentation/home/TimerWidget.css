@@ -1,0 +1,24 @@
+.timer-widget {
+    display: block;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 32px;
+    padding: 16px;
+}
+
+.timer-widget .title {
+    font-size: 1.1em;
+    color: #2e2e2e;
+}
+
+.timer-widget .time {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.timer-widget .units {
+    font-size: 1.5em;
+    color: #2e2e2e;
+}

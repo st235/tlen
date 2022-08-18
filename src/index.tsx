@@ -3,10 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import GlobalTimeSpentWatcher from './utils/GlobalTimeSpentWatcher';
+import SpentTimeRepository from './data/SpentTimeRepository';
+
+let spentTimeRepository = SpentTimeRepository.getInstance();
+
+let onSpentTimeChangedListener = (elapsedTime: number, timeDiff: number) => {
+  spentTimeRepository.updateTopTimeSpent(elapsedTime)
+    .then(_ => spentTimeRepository.updateOverallTimeSpent(timeDiff))
+    .catch(e => console.error(e));
+}
+
+// init singleton objects
+GlobalTimeSpentWatcher.getInstance()
+  .addListener(onSpentTimeChangedListener);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <App />

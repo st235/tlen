@@ -1,0 +1,61 @@
+.scoreboard {
+    display: block;
+
+    margin-top: 16px;
+
+    border-radius: 32px;
+    background-color: white;
+    padding: 16px;
+}
+
+.scoreboard .item {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.scoreboard .item .icon {
+    display: flex;
+    user-select: none;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 16px;
+    text-align: center;
+
+    border-radius: 32px;
+    background-color: #2e2e2e;
+    color: white;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.scoreboard .item .icon img {
+    display: inline;
+    width: 28px;
+    height: 28px;
+}
+
+.scoreboard .item .icon .title {
+    display: inline;
+    padding: 0;
+    margin-left: 4px;
+    font-size: 1.1em;
+}
+
+.scoreboard .item .text {
+    margin-left: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 4px;
+    font-size: 1.75em;
+    font-weight: 500;
+}

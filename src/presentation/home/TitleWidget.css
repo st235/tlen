@@ -1,0 +1,45 @@
+.title-widget {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    background-color: white;
+    border-radius: 32px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.title-widget .icon {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.title-widget .text-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 350px;
+
+    margin-left: 16px;
+}
+
+.title-widget .text-container .title {
+    font-weight: bold;
+    font-size: 1.75em;
+    color: #2e2e2e;
+    margin: 0;
+}
+
+.title-widget .text-container .description {
+    font-weight: 500;
+    font-size: 1.0em;
+    color: #424242;
+    margin: 0;
+    margin-top: 4px;
+}

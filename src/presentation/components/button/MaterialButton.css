@@ -1,0 +1,33 @@
+.material-button {
+    display: inline-flex;
+    background-color: aliceblue;
+    padding: 8px 16px 8px 16px;
+    border-radius: 64px;
+    cursor: pointer;
+
+    flex-direction: row;
+    align-items: center;
+
+    transition: opacity 0.25s ease, scale 0.25s ease, width 0.25s ease;
+}
+
+.material-button:hover {
+    opacity: 65%;
+}
+
+.material-button:active {
+    scale: 95%;
+}
+
+.material-button .text {
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.material-button .icon {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 8px;
+    user-select: none;
+}

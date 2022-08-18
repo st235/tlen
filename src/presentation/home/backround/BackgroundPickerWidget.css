@@ -1,0 +1,52 @@
+.picker-button {
+}
+
+.picker-hide {
+    display: none;
+}
+
+.picker {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    display: block;
+    min-width: 320px;
+    width: 620px;
+    height: 360px;
+    padding: 16px;
+    border-radius: 32px;
+    background-color: white;
+
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: space-between;
+}
+
+.picker::after {
+    content: "";
+    flex:content;
+}
+
+.picker-item img {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+.picker-item {
+    width: 128px;
+    height: 128px;
+
+    background-color: grey;
+
+    margin: 8px;
+    border-radius: 24px;
+    transition: outline 0.25s ease, filter 0.25s ease;
+    
+}
+
+.picker-item:hover {
+    filter: grayscale(100%);
+    outline: 4px solid #2e2e2e;
+}

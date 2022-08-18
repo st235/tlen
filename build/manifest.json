@@ -1,0 +1,17 @@
+{
+  "name": "Tlen 81",
+  "description": "Tlen is an extension",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "chrome_url_overrides": {
+    "newtab": "./index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+      "16": "logo192.png",
+      "48": "logo192.png",
+      "128": "logo192.png"
+  }
+}

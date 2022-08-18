@@ -13,9 +13,10 @@ Tlen is a small chrome extension that will help you to keep track of time spent 
 
 ### Screens
 
-| New Tab | Gallery | More of New Tab |
-| ------------- | ------------- | ------------- |
-| ![NewTab1](./images/tlen_1.png) | ![Gallery](./images/tlen_2.png) | ![NewTab2](./images/tlen_3.png) |
+![NewTab1](./images/tlen_1.png)
+![Gallery](./images/tlen_2.png)
+![NewTab2](./images/tlen_3.png)
+
 
 ### License
 
